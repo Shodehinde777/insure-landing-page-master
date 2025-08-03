@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header {
+  background-color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 33rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 9rem;
+}
+.nav__links {
+  /* ul */
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav__item {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+.view-btn,
+.vieww-btn,
+.viewww-btn {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* cursor: pointer; */
+}
+.view-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/*MOBILE-NAV*/
+
+.btn-mobile-navs,
+.btn-mobile-close {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show only hamburger by default */
+.btn-mobile-navs {
+  display: block; /* This must come AFTER the shared block above */
+  position: relative;
+  z-index: 101;
+}
+
+/* Ensure the close button shows only when toggled (via JS) */
+.btn-mobile-close {
+  position: relative;
+  z-index: 101;
+}
+
+.icon-mobile-nav {
+  height: 3rem;
+  width: 3rem;
+  /* color: #333; */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.logo {
+  height: 1.4rem;
+  transition: all 0.3s;
+}
+
+/* //////////////////////// */
+/* HERO SECTION */
+.section-hero {
+  padding: 0.5rem 0;
+  margin-bottom: 9.6rem;
+  background-color: hsl(256, 26%, 20%);
+  background-image: url(images/bg-pattern-intro-right-desktop.svg),
+    url(images/bg-pattern-intro-left-desktop.svg);
+  background-size: 500px, 70px;
+  background-position: top right, bottom left;
+
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+.hero {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+
+  align-items: center;
+  /* gap: 1rem */
+  column-gap: 1rem;
+  /* padding: 0 2rem; */
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; /* gives space between h1, p, button */
+  align-items: start; /* ensures everything aligns left */
+  margin-top: 0; /* fine-tune later */
+  /* remove max-width for now */
+  max-width: 35rem;
+}
+
+.human {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  border-top: 1px solid #aaa;
+  display: inline-block;
+  width: 10rem;
+  padding-top: 3rem;
+}
+.hero-img {
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.para-one {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+.vieww-btn {
+  background-color: inherit;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.vieww-btn:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+/* SECTION DIFFERENT */
+.section-different {
+  padding: 8rem 12rem; /* Top-bottom, left-right padding */
+}
+.we-diff {
+  white-space: nowrap; /*don't break*/
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  border-top: 1px solid #000;
+  display: inline-block;
+  width: 7rem;
+  padding-top: 3rem;
+}
+.diff-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.section-different .para-one {
+  font-size: 1rem;
+}
+.flex-pic {
+  width: 4rem;
+}
+.hero-img {
+  transform: translateY(10%);
+}
+
+/* //////////////////////// */
+/* FIND BOX SECTION */
+.section-find {
+  padding: 1rem 12rem;
+}
+.find {
+  font-size: 2rem;
+  margin-left: 7rem;
+  color: #eee;
+}
+.find-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(256, 26%, 20%);
+  padding: 2rem;
+  background-image: url(images/bg-pattern-how-we-work-desktop.svg); /* Replace with your path */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 600px; /* Adjust size */
+  margin-right: 15rem;
+}
+
+.viewww-btn {
+  background-color: inherit;
+  border-color: #aaa;
+  color: #fff;
+  margin-right: 15rem;
+}
+.viewww-btn:hover {
+  background-color: #fff;
+  color: #444;
+  border-color: #000;
+}
+
+/*/////////////////////////////*/
+/*FOOTER*/
+footer {
+  padding: 5rem 7rem; /* Top-bottom, left-right padding */
+  background-color: hsl(0, 0%, 98%);
+  /* background-color: #000; */
+  background-image: url(images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 450px; /* Adjust size */
+  margin-top: 10rem;
+}
+.logos-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #888;
+  padding-bottom: 2rem;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin-right: 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  /* transform: translateX(30px); */
+  column-gap: 0.5rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer p {
+  text-transform: uppercase;
+  color: hsl(273, 4%, 51%);
+  font-weight: 700;
+}
+
+.footer-nav li {
+  margin-bottom: 0.4rem;
+  color: hsl(270, 9%, 17%);
+  font-weight: 900;
+}
+.footer-nav li:first-child {
+  margin-top: 1rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #868e96;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #000;
+}
+footer img {
+  height: 1.2rem;
+}
+.footer-grid > div {
+  padding: 0; /* or reduce any left/right padding/margin */
+  margin: 0;
+}
+/* .img-class:hover,
+.img-class:active {
+  color: #000;
+} */
