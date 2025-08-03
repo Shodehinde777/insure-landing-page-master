@@ -16,7 +16,7 @@ This is a solution to the Insure Landing Page challenge on Frontend Mentor (http
 
 ## Features
 
-- Fully responsive layout
+- Responsive design for desktop and mobile
 - Mobile navigation toggle
 - Clean and modern design
 
